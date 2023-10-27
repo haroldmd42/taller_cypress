@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<testsuites>
+<testsuite name="Root Suite" timestamp="2023-10-26T22:21:03" tests="0" file="cypress\e2e\searchBook.cy.js" time="0.000" failures="0"></testsuite>
+<testsuite name="Busqueda de libros" timestamp="2023-10-26T22:21:03" tests="1" time="13.591" failures="0">
+  
+  <testcase name="Busqueda de libros Buscar un nuevo libro" time="13.450" classname="Buscar un nuevo libro"></testcase>
+  
+</testsuite>
+
+<testsuite name="Root Suite" timestamp="2023-10-26T22:20:41" tests="0" file="cypress\e2e\añadirEliminar.cy.js" time="0.000" failures="0"></testsuite>
+<testsuite name="Añadir y eliminar un libro" timestamp="2023-10-26T22:20:41" tests="1" time="21.186" failures="0">
+  
+  <testcase name="Añadir y eliminar un libro Registrar un nuevo usuario" time="21.113" classname="Registrar un nuevo usuario"></testcase>
+  
+</testsuite>
+
+</testsuites>
