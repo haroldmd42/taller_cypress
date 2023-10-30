@@ -3,38 +3,46 @@ import * as utils from "../utils.js";
 class OnBooks{
     registerUser (){
 
-let COMANDS = {
+let CONTEN = {
     nameUser: 'Harold',
     passwordUser: '5246433Yan#',
     buttonCollection: 'Add To Your Collection'
 }
+let LOCATOR  = {
+  buttonLogin: '[id="login"',
+  inputUserName: '[id="userName"]',
+  inputPassword: '[id="password"]',
+  buttonDelete: '[id="delete-record-undefined"]',
+  buttonWindowDelete: '[id="closeSmallModal-ok"]'
+
+}
 
         cy.contains("Book Store Application").click();
-        cy.get('[id="login"').click();
+        cy.get(LOCATOR.buttonLogin).click();
         // Evaluar que el botón de "Login" sea visible
-        cy.get('[id="login"]').should("be.visible");
+        cy.get(LOCATOR.buttonLogin).should("be.visible");
         // Evaluar que el botón de "Login" contenga el texto "Login"
-        cy.get('[id="login"]').should("contain", "Login");
-        cy.get('[id="userName"]').type(COMANDS.nameUser).should("have.value", COMANDS.nameUser);
-        cy.get('[id="password"]')
-          .type(COMANDS.passwordUser)
-          .should("have.value", COMANDS.passwordUser);
-        cy.get('[id="login"').click();
+        cy.get(LOCATOR.buttonLogin).should("contain", "Login");
+        cy.get(LOCATOR.inputUserName).type(CONTEN.nameUser).should("have.value", CONTEN.nameUser);
+        cy.get(LOCATOR.inputPassword)
+          .type(CONTEN.passwordUser)
+          .should("have.value", CONTEN.passwordUser);
+        cy.get(LOCATOR.buttonLogin).click();
     
         // Función para seleccionar un elemento al azar de la lista de libros
     
        
         utils.selectBookRandom();
         // Evaluar que el botón de "Login" sea visible
-        cy.contains(COMANDS.buttonCollection).click().should("be.visible");
-        cy.contains(COMANDS.buttonCollection).should(
+        cy.contains(CONTEN.buttonCollection).click().should("be.visible");
+        cy.contains(CONTEN.buttonCollection).should(
           "contain",
-          COMANDS.buttonCollection
+          CONTEN.buttonCollection
         );
         
         cy.contains("Profile").click();
-        cy.get('[id="delete-record-undefined"]').click();
-        cy.get('[id="closeSmallModal-ok"]').click();
+        cy.get(LOCATOR.buttonDelete).click();
+        cy.get(LOCATOR.buttonWindowDelete).click();
     }
 }
 

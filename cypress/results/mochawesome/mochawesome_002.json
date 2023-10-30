@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-10-30T13:03:57.570Z",
+    "end": "2023-10-30T13:04:28.598Z",
+    "duration": 31028,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "5e5a1503-5297-4b9f-a629-92a5485a6936",
+      "title": "",
+      "fullFile": "cypress\\e2e\\añadirEliminar.cy.js",
+      "file": "cypress\\e2e\\añadirEliminar.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "58bac8c3-e371-459f-a2ba-1d9d12761349",
+          "title": "Añadir y eliminar un libro",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Registrar un nuevo usuario",
+              "fullTitle": "Añadir y eliminar un libro Registrar un nuevo usuario",
+              "timedOut": null,
+              "duration": 30863,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Cypress.on(\"uncaught:exception\", () => {\n  return false;\n});\ncy.visit('/');\n_books.onBooks.registerUser();",
+              "err": {},
+              "uuid": "dfb39b67-ca18-4950-8ffd-5c022bab330c",
+              "parentUUID": "58bac8c3-e371-459f-a2ba-1d9d12761349",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "dfb39b67-ca18-4950-8ffd-5c022bab330c"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 30863,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/mochawesome",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
