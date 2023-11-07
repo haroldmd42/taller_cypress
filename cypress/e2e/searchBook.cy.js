@@ -1,6 +1,5 @@
 import { onSearchBooks } from "../support/objectsPag/searchBooks.js";
 
-
 describe('Busqueda de libros', () => { 
 it('Buscar un nuevo libro', () => {
     Cypress.on("uncaught:exception", () => {
@@ -10,8 +9,5 @@ it('Buscar un nuevo libro', () => {
       onSearchBooks.serachBooks()
     
 });
-
-
-
 
  })

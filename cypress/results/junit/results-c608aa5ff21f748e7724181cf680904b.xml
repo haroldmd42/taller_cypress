@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="14.269" tests="1" failures="0">
+  <testsuite name="Root Suite" timestamp="2023-10-30T13:47:55" tests="0" file="cypress\e2e\añadirEliminar.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Añadir y eliminar un libro" timestamp="2023-10-30T13:47:55" tests="1" time="14.265" failures="0">
+    <testcase name="Añadir y eliminar un libro Registrar un nuevo usuario" time="14.183" classname="Registrar un nuevo usuario">
+    </testcase>
+  </testsuite>
+</testsuites>
